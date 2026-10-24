@@ -32,86 +32,147 @@
 <body>
 
 <h1>PdfCraft — Privacy Policy</h1>
-<p class="updated">Last updated: 7 August 2026</p>
+<p class="updated">Last updated: 24 October 2026</p>
 
 <p>
-  PdfCraft is a PDF editing app for Android, published by appcraftstudio
+  PdfCraft is a PDF app for Android, published by appcraftstudio
   ("we", "us"). This policy explains what the app does and does not do with
-  your information. It is short because the app does very little with it.
+  your information.
 </p>
 
 <div class="note">
-  <strong>In one sentence:</strong> PdfCraft does not collect, transmit or
-  store any personal data, and the documents you open never leave your device.
+  <strong>In short:</strong> your documents stay on your phone. Only when you
+  use <strong>Ultra scan</strong> is a page image sent off the phone, to be read
+  by Google's Gemini AI. To keep your Ultra scan balance we store an anonymous
+  install ID with it. The only ads are <strong>optional</strong> video ads you
+  choose to watch to earn a free Ultra scan page, served by Google AdMob. We
+  never sell your data.
 </div>
 
 <h2>Documents and files</h2>
 <p>
   When you choose a PDF or a photo, Android copies it into PdfCraft's own
-  private storage area on your device. All processing — merging, splitting,
-  rotating, watermarking, numbering, page removal and text editing — happens
-  locally on your phone, using the phone's own processor.
+  private storage area on your device. All editing — merging, splitting,
+  rotating, watermarking, numbering, page removal, text editing and normal
+  scanning — happens locally on your phone.
 </p>
 <ul>
-  <li>Your documents are <strong>never uploaded</strong> to us or to anyone else.</li>
-  <li>We have no servers that receive your files, and no way to see them.</li>
-  <li>Finished files are written to the app's private cache and handed to
+  <li>Your documents are <strong>never uploaded</strong> to us. The only
+      exception is a scanned page you choose to read with Ultra scan, below.</li>
+  <li>Finished files are written to the app's private storage and handed to
       Android's share sheet only when you ask to share or save them. Where they
       go from there is your choice.</li>
-  <li>You can clear the app's working files at any time from within the app, or
-      by clearing the app's storage in Android Settings. Uninstalling the app
-      removes them all.</li>
+  <li>You can delete the app's files from within the app, or by clearing the
+      app's storage in Android Settings. Uninstalling the app removes them all.</li>
 </ul>
 
-<h2>Data we collect</h2>
+<h2>Ultra scan</h2>
 <p>
-  None. PdfCraft contains no analytics, no advertising, no crash reporting, no
-  tracking software and no third-party SDKs that collect data. We do not ask you
-  to create an account, and there is no sign-in.
+  Ultra scan turns a scanned page into editable text. When you start it, each
+  page image is sent over an encrypted (HTTPS) connection to our server, which
+  passes it to Google's Gemini API to read the text and layout. The result comes
+  back to your phone. Our server does not store page images or their text.
+  Google processes the image under the
+  <a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms of Service</a>.
 </p>
 <p>
-  We do not collect your name, email address, phone number, contacts, location,
-  device identifiers, or usage statistics.
+  If you add your own Gemini API key instead, pages go straight from your phone
+  to Google under your key, and do not pass through our server. The key is kept
+  on your phone only.
 </p>
 
-<h2>The one network request the app makes</h2>
+<h2>Your Ultra scan balance and purchases</h2>
 <p>
-  PdfCraft works without an internet connection. There is a single exception:
-  if you open the PDF editor and choose a font that is not already on your
-  device, the app downloads that font file from Google Fonts
-  (<code>fonts.gstatic.com</code>) and caches it on your device so it does not
-  need to download it again.
+  Ultra scan is paid in page credits: every install gets a few free pages, and
+  you can buy more or earn them by watching an ad. So that your balance survives
+  reinstalls, the app creates an <strong>install ID</strong>: a one-way hash
+  (SHA-256) of the device identifier Android provides to this app. It cannot be
+  turned back into that identifier and is not linked to your name, email, phone
+  number or Google account. Our server stores, against it:
 </p>
 <ul>
-  <li>Only the font file is requested. <strong>Your document is not sent, not
-      referenced, and not involved in any way.</strong></li>
-  <li>The request is made without cookies or credentials.</li>
-  <li>As with any request to any website, Google receives the network
-      information inherent to serving it, such as your IP address. This is
-      governed by
-      <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
-  <li>If you never choose a new font, PdfCraft makes no network requests at all.</li>
+  <li>your free and bought page balance, and a record of pages read, bought and refunded;</li>
+  <li>your Google Play purchase records: purchase token, order ID, product and credits;</li>
+  <li>a record of each free page earned by watching an ad: AdMob's transaction ID for the reward, the ad unit and the date.</li>
 </ul>
+<p>
+  Purchases are made and paid for through Google Play. We never see your card,
+  UPI or other payment details, your name or your email. Our server checks each
+  purchase with Google before adding credits, and checks daily for refunds.
+</p>
+
+<h2>Optional video ads for free pages</h2>
+<p>
+  On the <em>Ultra scan credits</em> screen you can choose to watch a short
+  video ad to earn a free Ultra scan page, a few times a day. Ads are shown only
+  when you tap <em>Watch ad</em>; PdfCraft shows no other ads.
+</p>
+<ul>
+  <li>The ads are provided by <strong>Google AdMob</strong>. When an ad is
+      requested and shown, the Google Mobile Ads SDK collects and sends to Google
+      information such as your device's <strong>advertising ID</strong>, IP
+      address, device model and operating system, ad interaction data (for
+      example, whether the ad was watched to the end) and approximate location
+      derived from your IP address. Google uses it to show and measure ads, to
+      prevent fraud and, where you allow it, to personalise ads — see
+      <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>.</li>
+  <li>So the free page reaches the right balance, the app passes your install
+      ID with the ad request, and AdMob sends it back to our server with a
+      transaction ID when you finish the ad. We do not receive your advertising
+      ID.</li>
+  <li>In the European Economic Area and the UK the app asks for your consent
+      before showing ads, and <em>Settings → Privacy choices for ads</em> lets you
+      change it. Anywhere, you can reset or delete your advertising ID, or opt out
+      of personalised ads, in your phone's Settings → Google → Ads (or Settings →
+      Privacy → Ads).</li>
+</ul>
+
+<h2>Fonts</h2>
+<p>
+  If you choose a font in the editor that is not already on your device, the
+  app downloads it once from Google Fonts (<code>fonts.gstatic.com</code>).
+  Only the font file is requested; your document is not sent. As with any web
+  request, Google receives your IP address.
+</p>
+
+<h2>Who we share data with</h2>
+<p>We do not sell, rent or trade your data. It is handled only by the services that make the features work:</p>
+<ul>
+  <li><strong>Google (Gemini API)</strong> — Ultra scan page images, to read them.</li>
+  <li><strong>Cloudflare</strong> — hosts our server and its database: requests including your IP address, your install ID, balance and purchase records.</li>
+  <li><strong>Google Play</strong> — purchases, purchase checks and refunds.</li>
+  <li><strong>Google AdMob</strong> — the optional video ads, as described above.</li>
+  <li><strong>Google Fonts</strong> — font downloads.</li>
+</ul>
+<p>We may also disclose information if the law requires it.</p>
 
 <h2>Permissions</h2>
 <p>
-  PdfCraft requests only <code>INTERNET</code> and
-  <code>ACCESS_NETWORK_STATE</code>, which are used for the font download
-  described above. It does not request access to your photos, media, files,
-  camera, microphone, contacts or location. Documents are selected through
-  Android's own file picker, which grants the app access to the one file you
-  chose and nothing else.
+  PdfCraft requests <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>
+  (Ultra scan, purchases, ads and fonts), Google Play Billing (buying credits),
+  and the advertising ID permission (<code>AD_ID</code>) used by Google AdMob for
+  the optional ads. It does not request access to your photos, files, camera,
+  microphone, contacts or location: documents are chosen through Android's own
+  file picker, and scanning uses Google's document scanner, which hands back only
+  the pages you scan.
 </p>
+
+<h2>Your choices</h2>
+<ul>
+  <li><strong>Don't use Ultra scan or ads.</strong> Everything else in PdfCraft works without sending your documents anywhere.</li>
+  <li><strong>See or delete your server data.</strong> Email us with the install ID shown on the <em>Ultra scan credits</em> screen and we will tell you what we hold or delete it within 30 days. Deleting it also removes unused credits.</li>
+  <li>Depending on where you live, laws such as India's Digital Personal Data Protection Act, 2023 or the EU GDPR give you further rights to access, correct or erase your data. Contact us to use them.</li>
+</ul>
 
 <h2>Children</h2>
 <p>
-  PdfCraft is a general-purpose utility and is not directed at children. Because
-  the app collects no data at all, it collects no data from children either.
+  PdfCraft is a general-purpose utility and is not directed at children under
+  13. We do not knowingly collect personal information from children.
 </p>
 
 <h2>Changes to this policy</h2>
 <p>
-  If the app's behaviour ever changes in a way that affects this policy, we will
+  If the app's behaviour changes in a way that affects this policy, we will
   update this page and change the date at the top before releasing that version.
 </p>
 
